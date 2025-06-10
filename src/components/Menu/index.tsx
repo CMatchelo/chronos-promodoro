@@ -7,7 +7,6 @@ import {
 } from 'lucide-react';
 import styles from './styles.module.css';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router';
 import { RouterLink } from '../RouterLink';
 
 type AvailableThemes = 'dark' | 'light';
@@ -41,7 +40,6 @@ export function Menu() {
 
   return (
     <nav className={styles.menu}>
-      <span>{theme}</span>
       <RouterLink
         className={styles.menuLink}
         href='/'
